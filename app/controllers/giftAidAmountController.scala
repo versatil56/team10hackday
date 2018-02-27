@@ -39,7 +39,7 @@ class giftAidAmountController @Inject()(appConfig: FrontendAppConfig,
 
 
 
-      Ok(giftAidAmount(donatedAmount.toDouble * 0.25,donatedAmount,appConfig))
+      Ok(giftAidAmount(donatedAmount.toDouble * 0.25,donatedAmount.toDouble + donatedAmount.toDouble * 0.25,appConfig))
     }
   }
 }

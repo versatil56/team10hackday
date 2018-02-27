@@ -16,7 +16,7 @@
 
 @import config.FrontendAppConfig
 
-@(giftAidAmount: Double,totalAmount: Int, appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
+@(giftAidAmount: Double,totalAmount: Double, appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("giftAidAmount.title"),
