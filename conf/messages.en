@@ -53,14 +53,14 @@ whatIsDonatorsName.error.required = Please give an answer for whatIsDonatorsName
 whatIsDonatorsName.error.wholeNumber = Please give an answer for whatIsDonatorsName using whole numbers
 whatIsDonatorsName.error.outOfRange = whatIsDonatorsName must be between {0} and {1}
 
-donatorsName.title = donatorsName
-donatorsName.heading = donatorsName
+donatorsName.title = What is your first name?
+donatorsName.heading = What is your first name?
 donatorsName.checkYourAnswersLabel = donatorsName
 donatorsName.error.required = Enter donatorsName
 donatorsName.error.length = donatorsName must be 20 characters or less
 
-donatorsSurname.title = donatorsSurname
-donatorsSurname.heading = donatorsSurname
+donatorsSurname.title = What is your last name?
+donatorsSurname.heading = What is your last name?
 donatorsSurname.checkYourAnswersLabel = donatorsSurname
 donatorsSurname.error.required = Enter donatorsSurname
 donatorsSurname.error.length = donatorsSurname must be 50 characters or less
@@ -83,36 +83,36 @@ donatorsPostcode.checkYourAnswersLabel = donatorsPostcode
 donatorsPostcode.error.required = Enter donatorsPostcode
 donatorsPostcode.error.length = donatorsPostcode must be 100 characters or less
 
-amountToDonate.title = amountToDonate
-amountToDonate.heading = amountToDonate
+amountToDonate.title = Hou much do you want to donate?
+amountToDonate.heading = Hou much do you want to donate?
 amountToDonate.checkYourAnswersLabel = amountToDonate
 amountToDonate.error.nonNumeric = Please give an answer for amountToDonate using numbers
 amountToDonate.error.required = Please give an answer for amountToDonate
 amountToDonate.error.wholeNumber = Please give an answer for amountToDonate using whole numbers
 amountToDonate.error.outOfRange = amountToDonate must be between {0} and {1}
 
-donationDate.title = donationDate
-donationDate.heading = donationDate
+donationDate.title = What is date of donation?
+donationDate.heading = What is date of donation?
 donationDate.checkYourAnswersLabel = donationDate
 donationDate.error.required = Enter donationDate
 donationDate.error.length = donationDate must be 20 characters or less
 
-startPage.title = Donate money to Gift Aid
-startPage.heading = Donate money to Gift Aid
-startPage.first.para = Use this service if you are a UK taxpayer and want to make a donation to a charity through Gift Aid.
+startPage.title = Make a donation
+startPage.heading = Make a donation
+startPage.first.para = Use this service if you are a UK taxpayer and want to make a donation to a charity.
 
-donatorAgreement.title = donatorAgreement
-donatorAgreement.heading = donatorAgreement
+donatorAgreement.title = Gift Aid agreement
+donatorAgreement.heading = Gift Aid agreement
 donatorAgreement.checkYourAnswersLabel = donatorAgreement
 donatorAgreement.error.required = Please give an answer for donatorAgreement
 
-doYouHaveADonatorsNumber.title = doYouHaveADonatorsNumber
-doYouHaveADonatorsNumber.heading = doYouHaveADonatorsNumber
+doYouHaveADonatorsNumber.title = Have you got Gift Aid number?
+doYouHaveADonatorsNumber.heading = Have you got Gift Aid number?
 doYouHaveADonatorsNumber.checkYourAnswersLabel = doYouHaveADonatorsNumber
 doYouHaveADonatorsNumber.error.required = Please give an answer for doYouHaveADonatorsNumber
 
-whatIsYourDonatorsNumber.title = whatIsYourDonatorsNumber
-whatIsYourDonatorsNumber.heading = whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.title = What is your Gift Aid number?
+whatIsYourDonatorsNumber.heading = What is your Gift Aid number?
 whatIsYourDonatorsNumber.checkYourAnswersLabel = whatIsYourDonatorsNumber
 whatIsYourDonatorsNumber.error.required = Enter whatIsYourDonatorsNumber
 whatIsYourDonatorsNumber.error.length = whatIsYourDonatorsNumber must be 100 characters or less
