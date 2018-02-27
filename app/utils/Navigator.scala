@@ -32,7 +32,8 @@ class Navigator @Inject()() {
     donatorsNameId -> routeToSurname,
     donatorsSurnameId -> routeToHouseName,
     donatorsHouseNumberId -> routeToPostcode,
-    donatorsPostcodeId -> routeToEmail
+    donatorsPostcodeId -> routeToEmail,
+    donatorsEmailId -> routeToUserAnswersPage
   )
 
   private val editRouteMap: Map[Identifier, UserAnswers => Call] = Map(
@@ -49,6 +50,8 @@ class Navigator @Inject()() {
   def routeToPostcode(answers: UserAnswers) = routes.donatorsPostcodeController.onPageLoad(NormalMode)
 
   def routeToEmail(answers: UserAnswers) = routes.donatorsEmailController.onPageLoad(NormalMode)
+
+  def routeToUserAnswersPage(answers: UserAnswers) = routes.CheckYourAnswersController.onPageLoad
 
   def nextPage(id: Identifier, mode: Mode): UserAnswers => Call = mode match {
     case NormalMode =>

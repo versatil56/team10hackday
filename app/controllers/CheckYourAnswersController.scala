@@ -34,7 +34,15 @@ class CheckYourAnswersController @Inject()(appConfig: FrontendAppConfig,
   def onPageLoad() = (getData andThen requireData) {
     implicit request =>
       val checkYourAnswersHelper = new CheckYourAnswersHelper(request.userAnswers)
-      val sections = Seq(AnswerSection(None, Seq()))
+      val sections = Seq(AnswerSection(None, Seq(
+        checkYourAnswersHelper.amountToDonate,
+        checkYourAnswersHelper.donationDate,
+        checkYourAnswersHelper.donatorsName,
+        checkYourAnswersHelper.donatorsSurname,
+        checkYourAnswersHelper.donatorsEmail,
+        checkYourAnswersHelper.donatorsHouseNumber,
+        checkYourAnswersHelper.donatorsPostcode
+      ).flatten))
       Ok(check_your_answers(appConfig, sections))
   }
 }
