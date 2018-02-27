@@ -21,6 +21,8 @@ import identifiers._
 import models._
 
 class UserAnswers(val cacheMap: CacheMap) extends Enumerable.Implicits {
+  def doYouWantToGiftAid: Option[Boolean] = cacheMap.getEntry[Boolean](doYouWantToGiftAidId.toString)
+
   def whatIsYourDonatorsNumber: Option[String] = cacheMap.getEntry[String](whatIsYourDonatorsNumberId.toString)
 
   def doYouHaveADonatorsNumber: Option[Boolean] = cacheMap.getEntry[Boolean](doYouHaveADonatorsNumberId.toString)
