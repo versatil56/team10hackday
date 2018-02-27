@@ -21,6 +21,12 @@ import identifiers._
 import models._
 
 class UserAnswers(val cacheMap: CacheMap) extends Enumerable.Implicits {
+  def donatorsPostcode: Option[String] = cacheMap.getEntry[String](donatorsPostcodeId.toString)
+
+  def donatorsHouseNumber: Option[String] = cacheMap.getEntry[String](donatorsHouseNumberId.toString)
+
+  def donatorsEmail: Option[String] = cacheMap.getEntry[String](donatorsEmailId.toString)
+
   def donatorsSurname: Option[String] = cacheMap.getEntry[String](donatorsSurnameId.toString)
 
   def donatorsName: Option[String] = cacheMap.getEntry[String](donatorsNameId.toString)

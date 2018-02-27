@@ -22,6 +22,18 @@ import viewmodels.{AnswerRow, RepeaterAnswerRow, RepeaterAnswerSection}
 
 class CheckYourAnswersHelper(userAnswers: UserAnswers) {
 
+  def donatorsPostcode: Option[AnswerRow] = userAnswers.donatorsPostcode map {
+    x => AnswerRow("donatorsPostcode.checkYourAnswersLabel", s"$x", false, routes.donatorsPostcodeController.onPageLoad(CheckMode).url)
+  }
+
+  def donatorsHouseNumber: Option[AnswerRow] = userAnswers.donatorsHouseNumber map {
+    x => AnswerRow("donatorsHouseNumber.checkYourAnswersLabel", s"$x", false, routes.donatorsHouseNumberController.onPageLoad(CheckMode).url)
+  }
+
+  def donatorsEmail: Option[AnswerRow] = userAnswers.donatorsEmail map {
+    x => AnswerRow("donatorsEmail.checkYourAnswersLabel", s"$x", false, routes.donatorsEmailController.onPageLoad(CheckMode).url)
+  }
+
   def donatorsSurname: Option[AnswerRow] = userAnswers.donatorsSurname map {
     x => AnswerRow("donatorsSurname.checkYourAnswersLabel", s"$x", false, routes.donatorsSurnameController.onPageLoad(CheckMode).url)
   }

@@ -62,3 +62,21 @@ donatorsSurname.heading = donatorsSurname
 donatorsSurname.checkYourAnswersLabel = donatorsSurname
 donatorsSurname.error.required = Enter donatorsSurname
 donatorsSurname.error.length = donatorsSurname must be 50 characters or less
+
+donatorsEmail.title = donatorsEmail
+donatorsEmail.heading = donatorsEmail
+donatorsEmail.checkYourAnswersLabel = donatorsEmail
+donatorsEmail.error.required = Enter donatorsEmail
+donatorsEmail.error.length = donatorsEmail must be 100 characters or less
+
+donatorsHouseNumber.title = donatorsHouseNumber
+donatorsHouseNumber.heading = donatorsHouseNumber
+donatorsHouseNumber.checkYourAnswersLabel = donatorsHouseNumber
+donatorsHouseNumber.error.required = Enter donatorsHouseNumber
+donatorsHouseNumber.error.length = donatorsHouseNumber must be 10 characters or less
+
+donatorsPostcode.title = donatorsPostcode
+donatorsPostcode.heading = donatorsPostcode
+donatorsPostcode.checkYourAnswersLabel = donatorsPostcode
+donatorsPostcode.error.required = Enter donatorsPostcode
+donatorsPostcode.error.length = donatorsPostcode must be 100 characters or less

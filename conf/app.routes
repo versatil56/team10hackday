@@ -26,3 +26,18 @@ GET        /donatorsSurname               controllers.donatorsSurnameController.
 POST       /donatorsSurname               controllers.donatorsSurnameController.onSubmit(mode: Mode = NormalMode)
 GET        /changedonatorsSurname                        controllers.donatorsSurnameController.onPageLoad(mode: Mode = CheckMode)
 POST       /changedonatorsSurname                        controllers.donatorsSurnameController.onSubmit(mode: Mode = CheckMode)
+
+GET        /donatorsEmail               controllers.donatorsEmailController.onPageLoad(mode: Mode = NormalMode)
+POST       /donatorsEmail               controllers.donatorsEmailController.onSubmit(mode: Mode = NormalMode)
+GET        /changedonatorsEmail                        controllers.donatorsEmailController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedonatorsEmail                        controllers.donatorsEmailController.onSubmit(mode: Mode = CheckMode)
+
+GET        /donatorsHouseNumber               controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = NormalMode)
+POST       /donatorsHouseNumber               controllers.donatorsHouseNumberController.onSubmit(mode: Mode = NormalMode)
+GET        /changedonatorsHouseNumber                        controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedonatorsHouseNumber                        controllers.donatorsHouseNumberController.onSubmit(mode: Mode = CheckMode)
+
+GET        /donatorsPostcode               controllers.donatorsPostcodeController.onPageLoad(mode: Mode = NormalMode)
+POST       /donatorsPostcode               controllers.donatorsPostcodeController.onSubmit(mode: Mode = NormalMode)
+GET        /changedonatorsPostcode                        controllers.donatorsPostcodeController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedonatorsPostcode                        controllers.donatorsPostcodeController.onSubmit(mode: Mode = CheckMode)
