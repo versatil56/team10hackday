@@ -115,6 +115,8 @@ doYouHaveADonatorsNumber.heading = Have you got Gift Aid number?
 doYouHaveADonatorsNumber.checkYourAnswersLabel = doYouHaveADonatorsNumber
 doYouHaveADonatorsNumber.error.required = Please give an answer for doYouHaveADonatorsNumber
 
+doYouWantGiftAid.description = Increase your donation by 25p for every £1 you donate at no extra cost to you
+
 whatIsYourDonatorsNumber.title = What’s your Gift Aid number?
 whatIsYourDonatorsNumber.heading = What’s your Gift Aid number?
 whatIsYourDonatorsNumber.checkYourAnswersLabel = Gift Aid number
@@ -126,5 +128,5 @@ doYouWantToGiftAid.heading = Do you want to Gift Aid your donation?
 doYouWantToGiftAid.checkYourAnswersLabel = Gift Aid the donation
 doYouWantToGiftAid.error.required = Please give an answer for doYouWantToGiftAid
 
-giftAidAmount.title = Gift Aid amount
-giftAidAmount.heading = Gift Aid amount
+giftAidAmount.title = Gift Aid my donation
+giftAidAmount.heading = Gift Aid my donation
