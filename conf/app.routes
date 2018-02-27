@@ -46,3 +46,8 @@ GET        /amountToDonate               controllers.amountToDonateController.on
 POST       /amountToDonate               controllers.amountToDonateController.onSubmit(mode: Mode = NormalMode)
 GET        /changeamountToDonate                        controllers.amountToDonateController.onPageLoad(mode: Mode = CheckMode)
 POST       /changeamountToDonate                        controllers.amountToDonateController.onSubmit(mode: Mode = CheckMode)
+
+GET        /donationDate               controllers.donationDateController.onPageLoad(mode: Mode = NormalMode)
+POST       /donationDate               controllers.donationDateController.onSubmit(mode: Mode = NormalMode)
+GET        /changedonationDate                        controllers.donationDateController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedonationDate                        controllers.donationDateController.onSubmit(mode: Mode = CheckMode)

@@ -27,7 +27,8 @@ import models.{CheckMode, Mode, NormalMode}
 class Navigator @Inject()() {
 
   private val routeMap: Map[Identifier, UserAnswers => Call] = Map(
-    amountToDonateId -> routeToName,
+    amountToDonateId -> routeToDate,
+    donationDateId -> routeToName,
     donatorsNameId -> routeToSurname,
     donatorsSurnameId -> routeToHouseName,
     donatorsHouseNumberId -> routeToPostcode,
@@ -37,6 +38,8 @@ class Navigator @Inject()() {
   private val editRouteMap: Map[Identifier, UserAnswers => Call] = Map(
 
   )
+  def routeToDate(answers: UserAnswers) = routes.donationDateController.onPageLoad(NormalMode)
+
   def routeToName(answers:UserAnswers) = routes.donatorsNameController.onPageLoad(NormalMode)
 
   def routeToSurname(answers: UserAnswers) = routes.donatorsSurnameController.onPageLoad(NormalMode)

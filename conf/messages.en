@@ -88,3 +88,9 @@ amountToDonate.error.nonNumeric = Please give an answer for amountToDonate using
 amountToDonate.error.required = Please give an answer for amountToDonate
 amountToDonate.error.wholeNumber = Please give an answer for amountToDonate using whole numbers
 amountToDonate.error.outOfRange = amountToDonate must be between {0} and {1}
+
+donationDate.title = donationDate
+donationDate.heading = donationDate
+donationDate.checkYourAnswersLabel = donationDate
+donationDate.error.required = Enter donationDate
+donationDate.error.length = donationDate must be 20 characters or less
