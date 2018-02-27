@@ -94,3 +94,8 @@ donationDate.heading = donationDate
 donationDate.checkYourAnswersLabel = donationDate
 donationDate.error.required = Enter donationDate
 donationDate.error.length = donationDate must be 20 characters or less
+
+donatorAgreement.title = donatorAgreement
+donatorAgreement.heading = donatorAgreement
+donatorAgreement.checkYourAnswersLabel = donatorAgreement
+donatorAgreement.error.required = Please give an answer for donatorAgreement

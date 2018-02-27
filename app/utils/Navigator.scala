@@ -33,12 +33,16 @@ class Navigator @Inject()() {
     donatorsSurnameId -> routeToHouseName,
     donatorsHouseNumberId -> routeToPostcode,
     donatorsPostcodeId -> routeToEmail,
-    donatorsEmailId -> routeToUserAnswersPage
+    donatorsEmailId -> routeToAgreement,
+    donatorAgreementId -> routeToUserAnswersPage
   )
 
   private val editRouteMap: Map[Identifier, UserAnswers => Call] = Map(
 
   )
+
+  def routeToAgreement(answers: UserAnswers) = routes.donatorAgreementController.onPageLoad(NormalMode)
+
   def routeToDate(answers: UserAnswers) = routes.donationDateController.onPageLoad(NormalMode)
 
   def routeToName(answers:UserAnswers) = routes.donatorsNameController.onPageLoad(NormalMode)

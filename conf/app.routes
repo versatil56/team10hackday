@@ -1,53 +1,58 @@
 # microservice specific routes
 
-GET        /                                            controllers.IndexController.onPageLoad
+GET         /                                   controllers.IndexController.onPageLoad
 
-GET        /assets/*file                                controllers.Assets.versioned(path="/public", file: Asset)
+GET         /assets/*file                       controllers.Assets.versioned(path="/public", file: Asset)
 
-GET        /language/:lang                              controllers.LanguageSwitchController.switchToLanguage(lang: String)
+GET         /language/:lang                     controllers.LanguageSwitchController.switchToLanguage(lang: String)
 
-GET        /this-service-has-been-reset                 controllers.SessionExpiredController.onPageLoad
+GET         /this-service-has-been-reset        controllers.SessionExpiredController.onPageLoad
 
-GET        /check-your-answers                          controllers.CheckYourAnswersController.onPageLoad
+GET         /check-your-answers                 controllers.CheckYourAnswersController.onPageLoad
 
-GET        /unauthorised                                controllers.UnauthorisedController.onPageLoad
+GET         /unauthorised                       controllers.UnauthorisedController.onPageLoad
 
-GET        /whatIsDonatorsName               controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = NormalMode)
-POST       /whatIsDonatorsName               controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = NormalMode)
-GET        /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = CheckMode)
-POST       /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = CheckMode)
+GET         /whatIsDonatorsName                 controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = NormalMode)
+POST        /whatIsDonatorsName                 controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = NormalMode)
+GET         /changewhatIsDonatorsName           controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = CheckMode)
+POST        /changewhatIsDonatorsName           controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donatorsName               controllers.donatorsNameController.onPageLoad(mode: Mode = NormalMode)
-POST       /donatorsName               controllers.donatorsNameController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonatorsName                        controllers.donatorsNameController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonatorsName                        controllers.donatorsNameController.onSubmit(mode: Mode = CheckMode)
+GET         /donatorsName                       controllers.donatorsNameController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorsName                       controllers.donatorsNameController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorsName                 controllers.donatorsNameController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorsName                 controllers.donatorsNameController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donatorsSurname               controllers.donatorsSurnameController.onPageLoad(mode: Mode = NormalMode)
-POST       /donatorsSurname               controllers.donatorsSurnameController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonatorsSurname                        controllers.donatorsSurnameController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonatorsSurname                        controllers.donatorsSurnameController.onSubmit(mode: Mode = CheckMode)
+GET         /donatorsSurname                    controllers.donatorsSurnameController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorsSurname                    controllers.donatorsSurnameController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorsSurname              controllers.donatorsSurnameController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorsSurname              controllers.donatorsSurnameController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donatorsEmail               controllers.donatorsEmailController.onPageLoad(mode: Mode = NormalMode)
-POST       /donatorsEmail               controllers.donatorsEmailController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonatorsEmail                        controllers.donatorsEmailController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonatorsEmail                        controllers.donatorsEmailController.onSubmit(mode: Mode = CheckMode)
+GET         /donatorsEmail                      controllers.donatorsEmailController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorsEmail                      controllers.donatorsEmailController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorsEmail                controllers.donatorsEmailController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorsEmail                controllers.donatorsEmailController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donatorsHouseNumber               controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = NormalMode)
-POST       /donatorsHouseNumber               controllers.donatorsHouseNumberController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonatorsHouseNumber                        controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonatorsHouseNumber                        controllers.donatorsHouseNumberController.onSubmit(mode: Mode = CheckMode)
+GET         /donatorsHouseNumber                controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorsHouseNumber                controllers.donatorsHouseNumberController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorsHouseNumber          controllers.donatorsHouseNumberController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorsHouseNumber          controllers.donatorsHouseNumberController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donatorsPostcode               controllers.donatorsPostcodeController.onPageLoad(mode: Mode = NormalMode)
-POST       /donatorsPostcode               controllers.donatorsPostcodeController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonatorsPostcode                        controllers.donatorsPostcodeController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonatorsPostcode                        controllers.donatorsPostcodeController.onSubmit(mode: Mode = CheckMode)
+GET         /donatorsPostcode                   controllers.donatorsPostcodeController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorsPostcode                   controllers.donatorsPostcodeController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorsPostcode             controllers.donatorsPostcodeController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorsPostcode             controllers.donatorsPostcodeController.onSubmit(mode: Mode = CheckMode)
 
-GET        /amountToDonate               controllers.amountToDonateController.onPageLoad(mode: Mode = NormalMode)
-POST       /amountToDonate               controllers.amountToDonateController.onSubmit(mode: Mode = NormalMode)
-GET        /changeamountToDonate                        controllers.amountToDonateController.onPageLoad(mode: Mode = CheckMode)
-POST       /changeamountToDonate                        controllers.amountToDonateController.onSubmit(mode: Mode = CheckMode)
+GET         /amountToDonate                     controllers.amountToDonateController.onPageLoad(mode: Mode = NormalMode)
+POST        /amountToDonate                     controllers.amountToDonateController.onSubmit(mode: Mode = NormalMode)
+GET         /changeamountToDonate               controllers.amountToDonateController.onPageLoad(mode: Mode = CheckMode)
+POST        /changeamountToDonate               controllers.amountToDonateController.onSubmit(mode: Mode = CheckMode)
 
-GET        /donationDate               controllers.donationDateController.onPageLoad(mode: Mode = NormalMode)
-POST       /donationDate               controllers.donationDateController.onSubmit(mode: Mode = NormalMode)
-GET        /changedonationDate                        controllers.donationDateController.onPageLoad(mode: Mode = CheckMode)
-POST       /changedonationDate                        controllers.donationDateController.onSubmit(mode: Mode = CheckMode)
+GET         /donationDate                       controllers.donationDateController.onPageLoad(mode: Mode = NormalMode)
+POST        /donationDate                       controllers.donationDateController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonationDate                 controllers.donationDateController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonationDate                 controllers.donationDateController.onSubmit(mode: Mode = CheckMode)
+
+GET         /donatorAgreement                   controllers.donatorAgreementController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorAgreement                   controllers.donatorAgreementController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorAgreement             controllers.donatorAgreementController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorAgreement             controllers.donatorAgreementController.onSubmit(mode: Mode = CheckMode)

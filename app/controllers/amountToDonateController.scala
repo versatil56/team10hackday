@@ -24,11 +24,11 @@ import uk.gov.hmrc.play.bootstrap.controller.FrontendController
 import connectors.DataCacheConnector
 import controllers.actions._
 import config.FrontendAppConfig
-import forms.amountToDonateFormProvider
-import identifiers.amountToDonateId
+import forms.{amountToDonateFormProvider, donatorAgreementFormProvider}
+import identifiers.{amountToDonateId, donatorAgreementId}
 import models.Mode
 import utils.{Navigator, UserAnswers}
-import views.html.{amountToDonate, donatorsName}
+import views.html.{amountToDonate, donatorAgreement, donatorsName}
 
 import scala.concurrent.Future
 
@@ -65,3 +65,5 @@ class amountToDonateController @Inject()(
       )
   }
 }
+
+
