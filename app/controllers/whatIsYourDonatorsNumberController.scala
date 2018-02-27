@@ -24,15 +24,15 @@ import uk.gov.hmrc.play.bootstrap.controller.FrontendController
 import connectors.DataCacheConnector
 import controllers.actions._
 import config.FrontendAppConfig
-import forms.{amountToDonateFormProvider, donatorAgreementFormProvider}
-import identifiers.{amountToDonateId, donatorAgreementId}
+import forms.whatIsYourDonatorsNumberFormProvider
+import identifiers.whatIsYourDonatorsNumberId
 import models.Mode
 import utils.{Navigator, UserAnswers}
-import views.html.{amountToDonate, donatorAgreement, donatorsName}
+import views.html.whatIsYourDonatorsNumber
 
 import scala.concurrent.Future
 
-class amountToDonateController @Inject()(
+class whatIsYourDonatorsNumberController @Inject()(
                                         appConfig: FrontendAppConfig,
                                         override val messagesApi: MessagesApi,
                                         dataCacheConnector: DataCacheConnector,
@@ -40,30 +40,27 @@ class amountToDonateController @Inject()(
                                         authenticate: AuthAction,
                                         getData: DataRetrievalAction,
                                         requireData: DataRequiredAction,
-                                        formProvider: amountToDonateFormProvider) extends FrontendController with I18nSupport {
+                                        formProvider: whatIsYourDonatorsNumberFormProvider) extends FrontendController with I18nSupport {
 
   val form = formProvider()
 
-
-  def onPageLoad(mode: Mode) = getData {
+  def onPageLoad(mode: Mode) = (getData andThen requireData) {
     implicit request =>
-      val preparedForm = request.userAnswers.flatMap(x => x.amountToDonate) match {
+      val preparedForm = request.userAnswers.whatIsYourDonatorsNumber match {
         case None => form
         case Some(value) => form.fill(value)
       }
-      Ok(amountToDonate(appConfig, preparedForm, mode))
+      Ok(whatIsYourDonatorsNumber(appConfig, preparedForm, mode))
   }
 
-  def onSubmit(mode: Mode) = (getData).async {
+  def onSubmit(mode: Mode) = (getData andThen requireData).async {
     implicit request =>
       form.bindFromRequest().fold(
         (formWithErrors: Form[_]) =>
-          Future.successful(BadRequest(amountToDonate(appConfig, formWithErrors, mode))),
+          Future.successful(BadRequest(whatIsYourDonatorsNumber(appConfig, formWithErrors, mode))),
         (value) =>
-          dataCacheConnector.save[Int](request.externalId, amountToDonateId.toString, value).map(cacheMap =>
-            Redirect(navigator.nextPage(amountToDonateId, mode)(new UserAnswers(cacheMap))))
+          dataCacheConnector.save[String](request.externalId, whatIsYourDonatorsNumberId.toString, value).map(cacheMap =>
+            Redirect(navigator.nextPage(whatIsYourDonatorsNumberId, mode)(new UserAnswers(cacheMap))))
       )
   }
 }
-
-

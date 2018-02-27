@@ -22,6 +22,18 @@ import viewmodels.{AnswerRow, RepeaterAnswerRow, RepeaterAnswerSection}
 
 class CheckYourAnswersHelper(userAnswers: UserAnswers) {
 
+  def whatIsYourDonatorsNumber: Option[AnswerRow] = userAnswers.whatIsYourDonatorsNumber map {
+    x => AnswerRow("whatIsYourDonatorsNumber.checkYourAnswersLabel", s"$x", false, routes.whatIsYourDonatorsNumberController.onPageLoad(CheckMode).url)
+  }
+
+  def doYouHaveADonatorsNumber: Option[AnswerRow] = userAnswers.doYouHaveADonatorsNumber map {
+    x => AnswerRow("doYouHaveADonatorsNumber.checkYourAnswersLabel", if(x) "site.yes" else "site.no", true, routes.doYouHaveADonatorsNumberController.onPageLoad(CheckMode).url)
+  }
+
+  def donatorAgreement: Option[AnswerRow] = userAnswers.donatorAgreement map {
+    x => AnswerRow("donatorAgreement.checkYourAnswersLabel", if(x) "site.yes" else "site.no", true, routes.donatorAgreementController.onPageLoad(CheckMode).url)
+  }
+
   def donationDate: Option[AnswerRow] = userAnswers.donationDate map {
     x => AnswerRow("donationDate.checkYourAnswersLabel", s"$x", false, routes.donationDateController.onPageLoad(CheckMode).url)
   }

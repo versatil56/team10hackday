@@ -99,3 +99,19 @@ donationDate.error.length = donationDate must be 20 characters or less
 startPage.title = Donate money to Gift Aid
 startPage.heading = Donate money to Gift Aid
 startPage.first.para = Use this service if you are a UK taxpayer and want to make a donation to a charity through Gift Aid.
+
+donatorAgreement.title = donatorAgreement
+donatorAgreement.heading = donatorAgreement
+donatorAgreement.checkYourAnswersLabel = donatorAgreement
+donatorAgreement.error.required = Please give an answer for donatorAgreement
+
+doYouHaveADonatorsNumber.title = doYouHaveADonatorsNumber
+doYouHaveADonatorsNumber.heading = doYouHaveADonatorsNumber
+doYouHaveADonatorsNumber.checkYourAnswersLabel = doYouHaveADonatorsNumber
+doYouHaveADonatorsNumber.error.required = Please give an answer for doYouHaveADonatorsNumber
+
+whatIsYourDonatorsNumber.title = whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.heading = whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.checkYourAnswersLabel = whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.error.required = Enter whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.error.length = whatIsYourDonatorsNumber must be 100 characters or less

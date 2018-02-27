@@ -53,3 +53,18 @@ GET        /changedonationDate                        controllers.donationDateCo
 POST       /changedonationDate                        controllers.donationDateController.onSubmit(mode: Mode = CheckMode)
 
 GET        /startPage                       controllers.StartPageController.onPageLoad()
+
+GET         /donatorAgreement                   controllers.donatorAgreementController.onPageLoad(mode: Mode = NormalMode)
+POST        /donatorAgreement                   controllers.donatorAgreementController.onSubmit(mode: Mode = NormalMode)
+GET         /changedonatorAgreement             controllers.donatorAgreementController.onPageLoad(mode: Mode = CheckMode)
+POST        /changedonatorAgreement             controllers.donatorAgreementController.onSubmit(mode: Mode = CheckMode)
+
+GET        /doYouHaveADonatorsNumber                       controllers.doYouHaveADonatorsNumberController.onPageLoad(mode: Mode = NormalMode)
+POST       /doYouHaveADonatorsNumber                       controllers.doYouHaveADonatorsNumberController.onSubmit(mode: Mode = NormalMode)
+GET        /changedoYouHaveADonatorsNumber                       controllers.doYouHaveADonatorsNumberController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedoYouHaveADonatorsNumber                       controllers.doYouHaveADonatorsNumberController.onSubmit(mode: Mode = CheckMode)
+
+GET        /whatIsYourDonatorsNumber               controllers.whatIsYourDonatorsNumberController.onPageLoad(mode: Mode = NormalMode)
+POST       /whatIsYourDonatorsNumber               controllers.whatIsYourDonatorsNumberController.onSubmit(mode: Mode = NormalMode)
+GET        /changewhatIsYourDonatorsNumber                        controllers.whatIsYourDonatorsNumberController.onPageLoad(mode: Mode = CheckMode)
+POST       /changewhatIsYourDonatorsNumber                        controllers.whatIsYourDonatorsNumberController.onSubmit(mode: Mode = CheckMode)
