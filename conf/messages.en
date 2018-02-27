@@ -41,6 +41,7 @@ site.continue = Continue
 site.service_name = Make a donation to charity
 site.textarea.char_limit = (Limit is {0} characters)
 site.donate = Donate
+site.donate.again = Donate again
 
 unauthorised.title = You can’t access this service with this account
 unauthorised.heading = You can’t access this service with this account
