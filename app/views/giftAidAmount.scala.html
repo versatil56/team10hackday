@@ -27,4 +27,9 @@
 
     <p>@giftAidAmount</p>
     <p>@totalAmount</p>
+
+    @components.button_link(
+        messageKey = "site.continue",
+        href= routes.whatIsDonatorsNameController.onPageLoad(NormalMode).url
+    )
 }
