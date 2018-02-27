@@ -21,6 +21,10 @@ import identifiers._
 import models._
 
 class UserAnswers(val cacheMap: CacheMap) extends Enumerable.Implicits {
+  def whatIsYourDonatorsNumber: Option[String] = cacheMap.getEntry[String](whatIsYourDonatorsNumberId.toString)
+
+  def doYouHaveADonatorsNumber: Option[Boolean] = cacheMap.getEntry[Boolean](doYouHaveADonatorsNumberId.toString)
+
   def donatorAgreement: Option[Boolean] = cacheMap.getEntry[Boolean](donatorAgreementId.toString)
 
   def donationDate: Option[String] = cacheMap.getEntry[String](donationDateId.toString)
