@@ -16,7 +16,7 @@
 
 @import config.FrontendAppConfig
 
-@(giftAidAmount: Double,totalAmount: Double, appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
+@(giftAidAmount: Double,totalAmount: Double,amountDonated: Int, appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("giftAidAmount.title"),
@@ -27,6 +27,7 @@
 
     <p>@giftAidAmount</p>
     <p>@totalAmount</p>
+    <p>@amountDonated</p>
 
     @components.button_link(
         messageKey = "site.continue",
