@@ -103,6 +103,10 @@ startPage.first.para = Use this service if you are a UK taxpayer and want to mak
 
 donatorAgreement.title = Gift Aid agreement
 donatorAgreement.heading = Gift Aid agreement
+donatorAgreement.headText = By signing this declaration, I confirm:
+donatorAgreement.line1 = I am a UK Taxpayer
+donatorAgreement.line2 = I have paid (or will pay) the same amount or more in Income Tax or Capital Gains Tax in the current tax year
+donatorAgreement.line3 = If I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed, it is my respoinsibility to pay any difference to HMRC
 donatorAgreement.checkYourAnswersLabel = donatorAgreement
 donatorAgreement.error.required = Please give an answer for donatorAgreement
 
