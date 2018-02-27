@@ -121,10 +121,10 @@ whatIsYourDonatorsNumber.checkYourAnswersLabel = Gift Aid number
 whatIsYourDonatorsNumber.error.required = Enter whatIsYourDonatorsNumber
 whatIsYourDonatorsNumber.error.length = whatIsYourDonatorsNumber must be 100 characters or less
 
-doYouWantToGiftAid.title = doYouWantToGiftAid
-doYouWantToGiftAid.heading = doYouWantToGiftAid
-doYouWantToGiftAid.checkYourAnswersLabel = doYouWantToGiftAid
+doYouWantToGiftAid.title = Do you want to Gift Aid your donation?
+doYouWantToGiftAid.heading = Do you want to Gift Aid your donation?
+doYouWantToGiftAid.checkYourAnswersLabel = Gift Aid the donation
 doYouWantToGiftAid.error.required = Please give an answer for doYouWantToGiftAid
 
-giftAidAmount.title = giftAidAmount
-giftAidAmount.heading = giftAidAmount
+giftAidAmount.title = Gift Aid amount
+giftAidAmount.heading = Gift Aid amount

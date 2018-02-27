@@ -36,7 +36,6 @@ class CheckYourAnswersController @Inject()(appConfig: FrontendAppConfig,
       val checkYourAnswersHelper = new CheckYourAnswersHelper(request.userAnswers)
       val sections = Seq(AnswerSection(None, Seq(
         checkYourAnswersHelper.amountToDonate,
-        checkYourAnswersHelper.donationDate,
         checkYourAnswersHelper.donatorsName,
         checkYourAnswersHelper.donatorsSurname,
         checkYourAnswersHelper.donatorsEmail,
