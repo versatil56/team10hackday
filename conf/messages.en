@@ -80,3 +80,11 @@ donatorsPostcode.heading = donatorsPostcode
 donatorsPostcode.checkYourAnswersLabel = donatorsPostcode
 donatorsPostcode.error.required = Enter donatorsPostcode
 donatorsPostcode.error.length = donatorsPostcode must be 100 characters or less
+
+amountToDonate.title = amountToDonate
+amountToDonate.heading = amountToDonate
+amountToDonate.checkYourAnswersLabel = amountToDonate
+amountToDonate.error.nonNumeric = Please give an answer for amountToDonate using numbers
+amountToDonate.error.required = Please give an answer for amountToDonate
+amountToDonate.error.wholeNumber = Please give an answer for amountToDonate using whole numbers
+amountToDonate.error.outOfRange = amountToDonate must be between {0} and {1}

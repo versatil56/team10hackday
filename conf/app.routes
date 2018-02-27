@@ -41,3 +41,8 @@ GET        /donatorsPostcode               controllers.donatorsPostcodeControlle
 POST       /donatorsPostcode               controllers.donatorsPostcodeController.onSubmit(mode: Mode = NormalMode)
 GET        /changedonatorsPostcode                        controllers.donatorsPostcodeController.onPageLoad(mode: Mode = CheckMode)
 POST       /changedonatorsPostcode                        controllers.donatorsPostcodeController.onSubmit(mode: Mode = CheckMode)
+
+GET        /amountToDonate               controllers.amountToDonateController.onPageLoad(mode: Mode = NormalMode)
+POST       /amountToDonate               controllers.amountToDonateController.onSubmit(mode: Mode = NormalMode)
+GET        /changeamountToDonate                        controllers.amountToDonateController.onPageLoad(mode: Mode = CheckMode)
+POST       /changeamountToDonate                        controllers.amountToDonateController.onSubmit(mode: Mode = CheckMode)

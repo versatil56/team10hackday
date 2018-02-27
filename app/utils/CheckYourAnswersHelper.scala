@@ -22,6 +22,10 @@ import viewmodels.{AnswerRow, RepeaterAnswerRow, RepeaterAnswerSection}
 
 class CheckYourAnswersHelper(userAnswers: UserAnswers) {
 
+  def amountToDonate: Option[AnswerRow] = userAnswers.amountToDonate map {
+    x => AnswerRow("amountToDonate.checkYourAnswersLabel", s"$x", false, routes.amountToDonateController.onPageLoad(CheckMode).url)
+  }
+
   def donatorsPostcode: Option[AnswerRow] = userAnswers.donatorsPostcode map {
     x => AnswerRow("donatorsPostcode.checkYourAnswersLabel", s"$x", false, routes.donatorsPostcodeController.onPageLoad(CheckMode).url)
   }
