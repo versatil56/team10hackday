@@ -27,6 +27,7 @@
     bodyClasses = None) {
 
     @helpers.form(action = amountToDonateController.onSubmit(mode), 'autoComplete -> "off") {
+        @components.back_link()
 
         @components.error_summary(form.errors)
 
