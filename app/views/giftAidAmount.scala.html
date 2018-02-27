@@ -16,7 +16,7 @@
 
 @import config.FrontendAppConfig
 
-@(appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
+@(giftAidAmount: Double,totalAmount: Int, appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
 @main_template(
     title = messages("giftAidAmount.title"),
@@ -24,4 +24,7 @@
     bodyClasses = None) {
 
     @components.heading("giftAidAmount.heading")
+
+    <p>@giftAidAmount</p>
+    <p>@totalAmount</p>
 }

@@ -32,7 +32,7 @@ class Navigator @Inject()() {
     donatorsNameId -> routeToSurname,
     donatorsSurnameId -> routeToDoYouHaveDonatorsNumber,
     doYouHaveADonatorsNumberId -> routeToYourDonatorNumber,
-    whatIsYourDonatorsNumberId -> routeToAgreement,
+    whatIsYourDonatorsNumberId -> routeToEmail,
     donatorsHouseNumberId -> routeToPostcode,
     donatorsPostcodeId -> routeToEmail,
     donatorsEmailId -> routeToAgreement,

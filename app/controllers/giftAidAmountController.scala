@@ -33,7 +33,13 @@ class giftAidAmountController @Inject()(appConfig: FrontendAppConfig,
                                          requireData: DataRequiredAction) extends FrontendController with I18nSupport {
 
   def onPageLoad = (getData andThen requireData) {
-    implicit request =>
-      Ok(giftAidAmount(appConfig))
+    implicit request => {
+
+      val donatedAmount = request.userAnswers.amountToDonate.fold(0)(c=>c)
+
+
+
+      Ok(giftAidAmount(donatedAmount.toDouble * 0.25,donatedAmount,appConfig))
+    }
   }
 }
