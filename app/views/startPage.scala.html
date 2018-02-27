@@ -15,27 +15,22 @@
  *@
 
 @import config.FrontendAppConfig
-@import viewmodels.{Section, AnswerSection, RepeaterAnswerSection}
+@import models.Mode
+@import controllers.routes
 
-@(appConfig: FrontendAppConfig, answerSections: Seq[Section])(implicit request: Request[_], messages: Messages)
+@(appConfig: FrontendAppConfig)(implicit request: Request[_], messages: Messages)
 
 @main_template(
-    title = messages("checkYourAnswers.title"),
+    title = messages("startPage.title"),
     appConfig = appConfig,
     bodyClasses = None) {
 
-    <h1 class="heading-xlarge">@messages("checkYourAnswers.heading")</h1>
+    @components.heading("startPage.heading")
 
-    <p>@messages("checkYourAnswers.guidance")</p>
+    <p>@messages("startPage.first.para")</p>
 
-    @for(section <- answerSections){
-        @{
-            section match {
-                case a: AnswerSection => components.answer_section(a)
-                case r: RepeaterAnswerSection => components.repeater_answer_section(r)
-            }
-        }
-    }
-
-    @components.submit_button()
+    @components.button_link(
+        messageKey = "site.continue",
+        href= routes.amountToDonateController.onPageLoad(NormalMode).url
+    )
 }
