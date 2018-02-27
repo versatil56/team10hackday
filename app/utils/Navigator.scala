@@ -27,12 +27,12 @@ import models.{CheckMode, Mode, NormalMode}
 class Navigator @Inject()() {
 
   private val routeMap: Map[Identifier, UserAnswers => Call] = Map(
-    amountToDonateId -> routeToDate,
-    donationDateId -> routeToName,
+    amountToDonateId -> routeToDoYouWanToGiftAid,
+    doYouWantToGiftAidId -> routeAnswerGiftAid,
     donatorsNameId -> routeToSurname,
     donatorsSurnameId -> routeToDoYouHaveDonatorsNumber,
     doYouHaveADonatorsNumberId -> routeToYourDonatorNumber,
-    whatIsYourDonatorsNumberId -> routeToAgreement,
+    whatIsYourDonatorsNumberId -> routeToEmail,
     donatorsHouseNumberId -> routeToPostcode,
     donatorsPostcodeId -> routeToEmail,
     donatorsEmailId -> routeToAgreement,
@@ -42,6 +42,17 @@ class Navigator @Inject()() {
   private val editRouteMap: Map[Identifier, UserAnswers => Call] = Map(
 
   )
+
+  def routeToDoYouWanToGiftAid(answers: UserAnswers) = routes.doYouWantToGiftAidController.onPageLoad(NormalMode)
+
+  def routeAnswerGiftAid(answers: UserAnswers) = {
+    if (answers.doYouWantToGiftAid.fold(false)(c=>c)) {
+      routes.giftAidAmountController.onPageLoad()
+    }
+    else {
+      routes.donatorsNameController.onPageLoad(NormalMode)
+    }
+  }
 
   def routeToDoYouHaveDonatorsNumber(answers: UserAnswers): Call = routes.doYouHaveADonatorsNumberController.onPageLoad(NormalMode)
 

@@ -68,3 +68,10 @@ GET        /whatIsYourDonatorsNumber               controllers.whatIsYourDonator
 POST       /whatIsYourDonatorsNumber               controllers.whatIsYourDonatorsNumberController.onSubmit(mode: Mode = NormalMode)
 GET        /changewhatIsYourDonatorsNumber                        controllers.whatIsYourDonatorsNumberController.onPageLoad(mode: Mode = CheckMode)
 POST       /changewhatIsYourDonatorsNumber                        controllers.whatIsYourDonatorsNumberController.onSubmit(mode: Mode = CheckMode)
+
+GET        /doYouWantToGiftAid                       controllers.doYouWantToGiftAidController.onPageLoad(mode: Mode = NormalMode)
+POST       /doYouWantToGiftAid                       controllers.doYouWantToGiftAidController.onSubmit(mode: Mode = NormalMode)
+GET        /changedoYouWantToGiftAid                       controllers.doYouWantToGiftAidController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedoYouWantToGiftAid                       controllers.doYouWantToGiftAidController.onSubmit(mode: Mode = CheckMode)
+
+GET        /giftAidAmount                       controllers.giftAidAmountController.onPageLoad()
