@@ -53,47 +53,47 @@ whatIsDonatorsName.error.required = Please give an answer for whatIsDonatorsName
 whatIsDonatorsName.error.wholeNumber = Please give an answer for whatIsDonatorsName using whole numbers
 whatIsDonatorsName.error.outOfRange = whatIsDonatorsName must be between {0} and {1}
 
-donatorsName.title = What is your first name?
-donatorsName.heading = What is your first name?
-donatorsName.checkYourAnswersLabel = donatorsName
+donatorsName.title = What’s your first name?
+donatorsName.heading = What’s your first name?
+donatorsName.checkYourAnswersLabel = First name
 donatorsName.error.required = Enter donatorsName
 donatorsName.error.length = donatorsName must be 20 characters or less
 
-donatorsSurname.title = What is your last name?
-donatorsSurname.heading = What is your last name?
-donatorsSurname.checkYourAnswersLabel = donatorsSurname
+donatorsSurname.title = What’s your last name?
+donatorsSurname.heading = What’s your last name?
+donatorsSurname.checkYourAnswersLabel = Last name
 donatorsSurname.error.required = Enter donatorsSurname
 donatorsSurname.error.length = donatorsSurname must be 50 characters or less
 
-donatorsEmail.title = donatorsEmail
-donatorsEmail.heading = donatorsEmail
-donatorsEmail.checkYourAnswersLabel = donatorsEmail
+donatorsEmail.title = What’s your email?
+donatorsEmail.heading = What’s your email?
+donatorsEmail.checkYourAnswersLabel = Email
 donatorsEmail.error.required = Enter donatorsEmail
 donatorsEmail.error.length = donatorsEmail must be 100 characters or less
 
-donatorsHouseNumber.title = donatorsHouseNumber
-donatorsHouseNumber.heading = donatorsHouseNumber
-donatorsHouseNumber.checkYourAnswersLabel = donatorsHouseNumber
+donatorsHouseNumber.title = What’s your house number?
+donatorsHouseNumber.heading = What’s your house number?
+donatorsHouseNumber.checkYourAnswersLabel = House number
 donatorsHouseNumber.error.required = Enter donatorsHouseNumber
 donatorsHouseNumber.error.length = donatorsHouseNumber must be 10 characters or less
 
-donatorsPostcode.title = donatorsPostcode
-donatorsPostcode.heading = donatorsPostcode
-donatorsPostcode.checkYourAnswersLabel = donatorsPostcode
+donatorsPostcode.title = What’s your post code?
+donatorsPostcode.heading = What’s your post code?
+donatorsPostcode.checkYourAnswersLabel = Post code
 donatorsPostcode.error.required = Enter donatorsPostcode
 donatorsPostcode.error.length = donatorsPostcode must be 100 characters or less
 
 amountToDonate.title = Hou much do you want to donate?
 amountToDonate.heading = Hou much do you want to donate?
-amountToDonate.checkYourAnswersLabel = amountToDonate
+amountToDonate.checkYourAnswersLabel = Amount
 amountToDonate.error.nonNumeric = Please give an answer for amountToDonate using numbers
 amountToDonate.error.required = Please give an answer for amountToDonate
 amountToDonate.error.wholeNumber = Please give an answer for amountToDonate using whole numbers
 amountToDonate.error.outOfRange = amountToDonate must be between {0} and {1}
 
-donationDate.title = What is date of donation?
-donationDate.heading = What is date of donation?
-donationDate.checkYourAnswersLabel = donationDate
+donationDate.title = What’s date of donation?
+donationDate.heading = What’s date of donation?
+donationDate.checkYourAnswersLabel = Donation date
 donationDate.error.required = Enter donationDate
 donationDate.error.length = donationDate must be 20 characters or less
 
@@ -111,8 +111,8 @@ doYouHaveADonatorsNumber.heading = Have you got Gift Aid number?
 doYouHaveADonatorsNumber.checkYourAnswersLabel = doYouHaveADonatorsNumber
 doYouHaveADonatorsNumber.error.required = Please give an answer for doYouHaveADonatorsNumber
 
-whatIsYourDonatorsNumber.title = What is your Gift Aid number?
-whatIsYourDonatorsNumber.heading = What is your Gift Aid number?
-whatIsYourDonatorsNumber.checkYourAnswersLabel = whatIsYourDonatorsNumber
+whatIsYourDonatorsNumber.title = What’s your Gift Aid number?
+whatIsYourDonatorsNumber.heading = What’s your Gift Aid number?
+whatIsYourDonatorsNumber.checkYourAnswersLabel = Gift Aid number
 whatIsYourDonatorsNumber.error.required = Enter whatIsYourDonatorsNumber
 whatIsYourDonatorsNumber.error.length = whatIsYourDonatorsNumber must be 100 characters or less
