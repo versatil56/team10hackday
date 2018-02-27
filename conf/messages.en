@@ -50,3 +50,9 @@ whatIsDonatorsName.error.nonNumeric = Please give an answer for whatIsDonatorsNa
 whatIsDonatorsName.error.required = Please give an answer for whatIsDonatorsName
 whatIsDonatorsName.error.wholeNumber = Please give an answer for whatIsDonatorsName using whole numbers
 whatIsDonatorsName.error.outOfRange = whatIsDonatorsName must be between {0} and {1}
+
+donatorsName.title = donatorsName
+donatorsName.heading = donatorsName
+donatorsName.checkYourAnswersLabel = donatorsName
+donatorsName.error.required = Enter donatorsName
+donatorsName.error.length = donatorsName must be 20 characters or less

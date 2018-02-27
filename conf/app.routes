@@ -16,3 +16,8 @@ GET        /whatIsDonatorsName               controllers.whatIsDonatorsNameContr
 POST       /whatIsDonatorsName               controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = NormalMode)
 GET        /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = CheckMode)
 POST       /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = CheckMode)
+
+GET        /donatorsName               controllers.donatorsNameController.onPageLoad(mode: Mode = NormalMode)
+POST       /donatorsName               controllers.donatorsNameController.onSubmit(mode: Mode = NormalMode)
+GET        /changedonatorsName                        controllers.donatorsNameController.onPageLoad(mode: Mode = CheckMode)
+POST       /changedonatorsName                        controllers.donatorsNameController.onSubmit(mode: Mode = CheckMode)

@@ -24,42 +24,42 @@ import uk.gov.hmrc.play.bootstrap.controller.FrontendController
 import connectors.DataCacheConnector
 import controllers.actions._
 import config.FrontendAppConfig
-import forms.whatIsDonatorsNameFormProvider
-import identifiers.whatIsDonatorsNameId
+import forms.donatorsNameFormProvider
+import identifiers.donatorsNameId
 import models.Mode
 import utils.{Navigator, UserAnswers}
-import views.html.whatIsDonatorsName
+import views.html.donatorsName
 
 import scala.concurrent.Future
 
-class whatIsDonatorsNameController @Inject()(
+class donatorsNameController @Inject()(
                                         appConfig: FrontendAppConfig,
                                         override val messagesApi: MessagesApi,
                                         dataCacheConnector: DataCacheConnector,
                                         navigator: Navigator,
                                         getData: DataRetrievalAction,
                                         requireData: DataRequiredAction,
-                                        formProvider: whatIsDonatorsNameFormProvider) extends FrontendController with I18nSupport {
+                                        formProvider: donatorsNameFormProvider) extends FrontendController with I18nSupport {
 
   val form = formProvider()
 
-  def onPageLoad(mode: Mode) = (getData andThen requireData) {
+  def onPageLoad(mode: Mode) = getData {
     implicit request =>
-      val preparedForm = request.userAnswers.whatIsDonatorsName match {
+      val preparedForm = request.userAnswers.flatMap(x => x.donatorsName) match {
         case None => form
         case Some(value) => form.fill(value)
       }
-      Ok(whatIsDonatorsName(appConfig, preparedForm, mode))
+      Ok(donatorsName(appConfig, preparedForm, mode))
   }
 
-  def onSubmit(mode: Mode) = (getData andThen requireData).async {
+  def onSubmit(mode: Mode) = getData.async {
     implicit request =>
       form.bindFromRequest().fold(
         (formWithErrors: Form[_]) =>
-          Future.successful(BadRequest(whatIsDonatorsName(appConfig, formWithErrors, mode))),
+          Future.successful(BadRequest(donatorsName(appConfig, formWithErrors, mode))),
         (value) =>
-          dataCacheConnector.save[Int](request.externalId, whatIsDonatorsNameId.toString, value).map(cacheMap =>
-            Redirect(navigator.nextPage(whatIsDonatorsNameId, mode)(new UserAnswers(cacheMap))))
+          dataCacheConnector.save[String](request.externalId, donatorsNameId.toString, value).map(cacheMap =>
+            Redirect(navigator.nextPage(donatorsNameId, mode)(new UserAnswers(cacheMap))))
       )
   }
 }
