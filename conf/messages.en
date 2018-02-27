@@ -122,5 +122,5 @@ doYouWantToGiftAid.heading = Do you want to Gift Aid your donation?
 doYouWantToGiftAid.checkYourAnswersLabel = Gift Aid the donation
 doYouWantToGiftAid.error.required = Please give an answer for doYouWantToGiftAid
 
-giftAidAmount.title = giftAidAmount
-giftAidAmount.heading = giftAidAmount
+giftAidAmount.title = Gift Aid amount
+giftAidAmount.heading = Gift Aid amount
