@@ -65,7 +65,7 @@ class Navigator @Inject()() {
     }
   }
 
-  def routeToAgreement(answers: UserAnswers) = routes.donatorAgreementController.onPageLoad(NormalMode)
+  def routeToAgreement(answers: UserAnswers) = routes.CheckYourAnswersController.onPageLoad
 
   def routeToDate(answers: UserAnswers) = routes.donationDateController.onPageLoad(NormalMode)
 
@@ -79,7 +79,7 @@ class Navigator @Inject()() {
 
   def routeToEmail(answers: UserAnswers) = routes.donatorsEmailController.onPageLoad(NormalMode)
 
-  def routeToUserAnswersPage(answers: UserAnswers) = routes.CheckYourAnswersController.onPageLoad
+  def routeToUserAnswersPage(answers: UserAnswers) = routes.DonationConfirmationController.onPageLoad
 
   def nextPage(id: Identifier, mode: Mode): UserAnswers => Call = mode match {
     case NormalMode =>

@@ -124,3 +124,7 @@ doYouWantToGiftAid.error.required = Please give an answer for doYouWantToGiftAid
 
 giftAidAmount.title = Gift Aid amount
 giftAidAmount.heading = Gift Aid amount
+
+donationConfirmation.title = Donation process completed
+donationConfirmation.heading = Donation process completed
+donationConfirmation.para = You have successfully donated. Thank you.
