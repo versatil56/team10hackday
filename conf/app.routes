@@ -11,3 +11,8 @@ GET        /this-service-has-been-reset                 controllers.SessionExpir
 GET        /check-your-answers                          controllers.CheckYourAnswersController.onPageLoad
 
 GET        /unauthorised                                controllers.UnauthorisedController.onPageLoad
+
+GET        /whatIsDonatorsName               controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = NormalMode)
+POST       /whatIsDonatorsName               controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = NormalMode)
+GET        /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onPageLoad(mode: Mode = CheckMode)
+POST       /changewhatIsDonatorsName                        controllers.whatIsDonatorsNameController.onSubmit(mode: Mode = CheckMode)
