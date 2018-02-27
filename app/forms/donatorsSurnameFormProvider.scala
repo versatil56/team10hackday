@@ -14,17 +14,18 @@
  * limitations under the License.
  */
 
-package utils
+package forms
 
-import uk.gov.hmrc.http.cache.client.CacheMap
-import identifiers._
-import models._
+import javax.inject.Inject
 
-class UserAnswers(val cacheMap: CacheMap) extends Enumerable.Implicits {
-  def donatorsSurname: Option[String] = cacheMap.getEntry[String](donatorsSurnameId.toString)
+import forms.mappings.Mappings
+import play.api.data.Form
 
-  def donatorsName: Option[String] = cacheMap.getEntry[String](donatorsNameId.toString)
+class donatorsSurnameFormProvider @Inject() extends FormErrorHelper with Mappings {
 
-  def whatIsDonatorsName: Option[Int] = cacheMap.getEntry[Int](whatIsDonatorsNameId.toString)
-
+  def apply(): Form[String] =
+    Form(
+      "value" -> text("donatorsSurname.error.required")
+        .verifying(maxLength(50, "donatorsSurname.error.length"))
+    )
 }

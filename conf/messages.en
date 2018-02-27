@@ -56,3 +56,9 @@ donatorsName.heading = donatorsName
 donatorsName.checkYourAnswersLabel = donatorsName
 donatorsName.error.required = Enter donatorsName
 donatorsName.error.length = donatorsName must be 20 characters or less
+
+donatorsSurname.title = donatorsSurname
+donatorsSurname.heading = donatorsSurname
+donatorsSurname.checkYourAnswersLabel = donatorsSurname
+donatorsSurname.error.required = Enter donatorsSurname
+donatorsSurname.error.length = donatorsSurname must be 50 characters or less

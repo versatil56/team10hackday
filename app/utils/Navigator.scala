@@ -26,13 +26,13 @@ import models.{CheckMode, Mode, NormalMode}
 @Singleton
 class Navigator @Inject()() {
 
-  private val routeMap: Map[Identifier, UserAnswers => Call] = Map(
-
-  )
+  private val routeMap: Map[Identifier, UserAnswers => Call] = Map(donatorsNameId -> routeToSurname)
 
   private val editRouteMap: Map[Identifier, UserAnswers => Call] = Map(
 
   )
+
+  def routeToSurname(answers: UserAnswers) = routes.donatorsSurnameController.onPageLoad(NormalMode)
 
   def nextPage(id: Identifier, mode: Mode): UserAnswers => Call = mode match {
     case NormalMode =>
