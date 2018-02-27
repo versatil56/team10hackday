@@ -27,9 +27,24 @@
 
     @components.heading("giftAidAmount.heading")
 
-    <p>@giftAidAmount</p>
-    <p>@totalAmount</p>
-    <p>@amountDonated</p>
+<table>
+    <thead>
+    <tr>
+        <th scope="col">Amount you donated</>
+        <th scope="col">Gift aid added</th>
+        <th scope="col">Total amount donated to charity</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td scope="row">£@amountDonated</td>
+        <td scope="row">£@giftAidAmount</td>
+        <td scope="row">£@totalAmount</td>
+
+
+    </tr>
+    </tbody>
+</table>
 
     @components.button_link(
         messageKey = "site.continue",

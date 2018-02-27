@@ -21,8 +21,8 @@ error.required = Please enter a value
 error.summary.title = There’s been a problem
 error.summary.text = Check the following
 
-index.title = team10hackday
-index.heading = team10hackday
+index.title = Make a donation to charity
+index.heading = Make a donation to charity
 index.guidance = Welcome to your new frontend. Please see the README file for a guide to getting started.
 
 session_expired.title = For your security, this service has been reset
@@ -38,7 +38,7 @@ site.no = No
 site.yes = Yes
 site.save_and_continue = Save and continue
 site.continue = Continue
-site.service_name = team10hackday
+site.service_name = Make a donation to charity
 site.textarea.char_limit = (Limit is {0} characters)
 site.donate = Donate
 
@@ -83,8 +83,8 @@ donatorsPostcode.checkYourAnswersLabel = Post code
 donatorsPostcode.error.required = Enter donatorsPostcode
 donatorsPostcode.error.length = donatorsPostcode must be 100 characters or less
 
-amountToDonate.title = Hou much do you want to donate?
-amountToDonate.heading = Hou much do you want to donate?
+amountToDonate.title = How much do you want to donate?
+amountToDonate.heading = How much do you want to donate?
 amountToDonate.checkYourAnswersLabel = Amount
 amountToDonate.error.nonNumeric = Please give an answer for amountToDonate using numbers
 amountToDonate.error.required = Please give an answer for amountToDonate
@@ -103,6 +103,10 @@ startPage.first.para = Use this service if you are a UK taxpayer and want to mak
 
 donatorAgreement.title = Gift Aid agreement
 donatorAgreement.heading = Gift Aid agreement
+donatorAgreement.headText = By signing this declaration, I confirm:
+donatorAgreement.line1 = I am a UK Taxpayer
+donatorAgreement.line2 = I have paid (or will pay) the same amount or more in Income Tax or Capital Gains Tax in the current tax year
+donatorAgreement.line3 = If I pay less Income Tax and/or Capital Gains Tax than the amount of Gift Aid claimed, it is my respoinsibility to pay any difference to HMRC
 donatorAgreement.checkYourAnswersLabel = donatorAgreement
 donatorAgreement.error.required = Please give an answer for donatorAgreement
 
@@ -110,6 +114,8 @@ doYouHaveADonatorsNumber.title = Have you got Gift Aid number?
 doYouHaveADonatorsNumber.heading = Have you got Gift Aid number?
 doYouHaveADonatorsNumber.checkYourAnswersLabel = doYouHaveADonatorsNumber
 doYouHaveADonatorsNumber.error.required = Please give an answer for doYouHaveADonatorsNumber
+
+doYouWantGiftAid.description = Increase your donation by 25p for every £1 you donate at no extra cost to you
 
 whatIsYourDonatorsNumber.title = What’s your Gift Aid number?
 whatIsYourDonatorsNumber.heading = What’s your Gift Aid number?
@@ -122,8 +128,8 @@ doYouWantToGiftAid.heading = Do you want to Gift Aid your donation?
 doYouWantToGiftAid.checkYourAnswersLabel = Gift Aid the donation
 doYouWantToGiftAid.error.required = Please give an answer for doYouWantToGiftAid
 
-giftAidAmount.title = Gift Aid amount
-giftAidAmount.heading = Gift Aid amount
+giftAidAmount.title = Gift Aid my donation
+giftAidAmount.heading = Gift Aid my donation
 
 donationConfirmation.title = Donation process completed
 donationConfirmation.heading = Donation process completed

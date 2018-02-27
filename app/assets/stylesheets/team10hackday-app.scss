@@ -8,3 +8,34 @@
 @import 'partials/_utilities';
 
 @import 'partials/_shame';
+
+.form-field {
+    margin-bottom: 1.5em;
+}
+
+.link-back, .js-visible p {
+    margin-top: 0;
+}
+
+.u-align--right {
+    float: right;
+}
+
+.currencySymbol {
+    line-height: 2em;
+}
+
+.currencyInput {
+        margin-left: 0.3em;
+        @media screen and (max-width: 640px) {
+            width: 93%;
+        }
+}
+
+.error-summary .error-summary-heading {
+    margin-top: 0;
+}
+
+.section, .section--branded {
+    margin-top: 1.5em;
+}

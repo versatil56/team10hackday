@@ -33,8 +33,9 @@
 
         @components.heading("amountToDonate.heading")
 
-        @components.input_text(
+        @components.input_number(
             field = form("value"),
+            currencySymbol = Some(true),
             label = messages("amountToDonate.heading"),
             labelClass=Some("visually-hidden")
         )

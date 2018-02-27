@@ -22,23 +22,33 @@
 
 @(appConfig: FrontendAppConfig, form: Form[_], mode: Mode)(implicit request: Request[_], messages: Messages)
 
-@main_template(
-    title = messages("donatorAgreement.title"),
-    appConfig = appConfig,
-    bodyClasses = None) {
+    @main_template(
+        title = messages("donatorAgreement.title"),
+        appConfig = appConfig,
+        bodyClasses = None) {
 
-    @helpers.form(action = donatorAgreementController.onSubmit(mode), 'autoComplete -> "off") {
+        @helpers.form(action = donatorAgreementController.onSubmit(mode), 'autoComplete -> "off") {
 
-        @components.back_link()
+            @components.error_summary(form.errors)
 
-        @components.heading("donatorAgreement.heading")
+            @components.back_link()
 
-        @components.input_yes_no(
-            field = form("value"),
-            label = messages("donatorAgreement.heading"),
-            labelClass = Some("visually-hidden")
-        )
+            @components.heading("donatorAgreement.heading")
 
-        @components.submit_button()
+            <p>@messages("donatorAgreement.headText")</p>
+
+            <ul class="bullets">
+                <li>@messages("donatorAgreement.line1")</li>
+                <li>@messages("donatorAgreement.line2")</li>
+                <li>@messages("donatorAgreement.line3")</li>
+            </ul>
+
+            @components.input_yes_no(
+                field = form("value"),
+                label = messages("donatorAgreement.heading"),
+                labelClass = Some("visually-hidden")
+            )
+
+            @components.submit_button()
+        }
     }
-}

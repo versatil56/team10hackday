@@ -30,6 +30,8 @@
 
         @helpers.form(action = CheckYourAnswersController.onSubmit(), 'autoComplete -> "off") {
 
+        @components.back_link()
+
         <h1 class="heading-xlarge">@messages("checkYourAnswers.heading")</h1>
 
         <p>@messages("checkYourAnswers.guidance")</p>
@@ -44,6 +46,14 @@
         }
 
         <h2>@messages("donatorAgreement.heading")</h2>
+
+        <p>@messages("donatorAgreement.headText")</p>
+
+        <ul class="bullets">
+            <li>@messages("donatorAgreement.line1")</li>
+            <li>@messages("donatorAgreement.line2")</li>
+            <li>@messages("donatorAgreement.line3")</li>
+        </ul>
 
         @components.input_yes_no(
             field = form("value"),
