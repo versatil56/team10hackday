@@ -25,10 +25,10 @@
     bodyClasses = None) {
 
     @components.back_link()
-
+<div class="govuk-box-highlight">
     @components.heading("donationConfirmation.heading")
 
     <p>@messages("donationConfirmation.para")</p>
-
+</div>
     @components.button_link("site.donate.again", StartPageController.onPageLoad().url)
 }
